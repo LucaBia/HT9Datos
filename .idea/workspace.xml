@@ -12,18 +12,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/HT9Datos$HT9.ic" NAME="HT9 Coverage Results" MODIFIED="1556335861135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ht9.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="HT9.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ht9/HT9.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
+            <state relative-caret-position="-46">
               <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BSTFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ht9/BSTFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>porladerecha</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +52,13 @@
       <map>
         <entry key="$USER_HOME$/Desktop/Dota2Narrator" value="PREVIEW" />
       </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/ht9/HT9.java" />
+      </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -55,12 +81,6 @@
               <item name="HT9Datos" type="b2602c69:ProjectViewProjectNode" />
               <item name="HT9Datos" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HT9Datos" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HT9Datos" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ht9" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,15 +195,16 @@
       <window_info anchor="right" id="Palette&#9;" />
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32923076" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32923076" />
       <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Sequence" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="right" id="Panda" />
-      <window_info anchor="bottom" id="Run with VisualVM" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18864469" />
-      <window_info anchor="bottom" id="JProfiler" />
-      <window_info anchor="bottom" id="Panda Executor" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32923076" />
+      <window_info anchor="right" id="Panda" weight="0.32967034" />
+      <window_info anchor="bottom" id="Run with VisualVM" visible="true" weight="0.32923076" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18864469" />
+      <window_info anchor="bottom" id="JProfiler" weight="0.32923076" />
+      <window_info anchor="bottom" id="Panda Executor" weight="0.32923076" />
       <window_info anchor="right" id="Theme Preview" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" />
@@ -199,9 +220,26 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dicc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="4623" column="20" selection-start-line="4623" selection-start-column="8" selection-end-line="4623" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texto.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ht9/BSTFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ht9/HT9.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
+        <state relative-caret-position="-46">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
