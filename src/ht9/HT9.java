@@ -99,21 +99,4 @@ public class HT9 {
 
     }
 
-    // public static void agregar(BinaryTree btActual, BinaryTree btSiguiente) {
-    //
-    //     if (btActual.value().toString().compareTo(btSiguiente.value().toString()) > 0) {
-    //         if (btActual.left().value() == null) {
-    //             btActual.setLeft(btSiguiente);
-    //         } else {
-    //             agregar(btActual.left(), btSiguiente);
-    //         }
-    //     } else if (btActual.value().toString().compareTo(btSiguiente.value().toString()) < 0) {
-    //         if (btActual.right().value() == null) {
-    //             btActual.setRight(btSiguiente);
-    //         } else {
-    //             agregar(btActual.right(), btSiguiente);
-    //         }
-    //     }
-    // }
-
 }
