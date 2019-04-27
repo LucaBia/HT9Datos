@@ -35,7 +35,7 @@ public class HT9 {
         BSTInterface tree = BSTFactory.createBST(tipo);
 
         //Para leer el archivo
-        System.out.println("Ingrese el nombre del archivo");
+        System.out.println("Ingrese el nombre del diccionario");
         archivoNombre = read.next();
         ArrayList<String> archivo = new ArrayList<>();
         try {
@@ -49,7 +49,7 @@ public class HT9 {
         }
 
         for (String linea : archivo) {
-            String lineaClean = linea.replaceAll("\t", " ").replaceAll(", ", "").replaceAll(";", "");
+            String lineaClean = linea.replaceAll("\t", " ").replaceAll(",", "").replaceAll(";", "");
 
             String ingles = lineaClean.trim().split("\\s+")[0].toLowerCase();
             String espanol = lineaClean.trim().split("\\s+")[1].toLowerCase();
@@ -66,7 +66,7 @@ public class HT9 {
 
         //Para leer el archivo
         System.out.println();
-        System.out.println("Ingrese el nombre del archivo");
+        System.out.println("Ingrese el nombre del archivo a traducir");
         archivoNombre = read.next();
         archivo = new ArrayList<>();
         try {

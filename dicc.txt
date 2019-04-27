@@ -2264,6 +2264,7 @@ down	cuestaabajo
 doze	echarlasiesta
 do	abolir, abrogar
 do	dañara
+do hacer
 drag	tirar; remolcar
 draining	desagüe
 dram	aperitivo
@@ -3864,6 +3865,7 @@ notion	inteligencia
 not	deningunamanera; deningúnmodo, nimuchomenos, no...deltodo
 not	deningunamanera
 not	indispuesta
+not no
 nought	cero
 noun	substantivo
 nourish	alimentar
@@ -5501,7 +5503,7 @@ town	ayuntamiento
 toy	juguete
 to	bastante, poco
 to	porlaizquierda
-to	porladerecha
+to	a
 trace	amojonar; impresión
 trace	amojonar
 track	impresión
