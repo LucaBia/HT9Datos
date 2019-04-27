@@ -24,7 +24,6 @@ public class HT9 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         Scanner read = new Scanner(System.in);
         ArrayList<Association> lstNodos = new ArrayList();
         String archivoNombre;
@@ -44,17 +43,21 @@ public class HT9 {
         }
 
         for (String linea : archivo) {
-            String lineaClean = linea.replaceAll("\\(","").replaceAll("\\)", " ").replaceAll(",", "");
+            String lineaClean = linea.replaceAll("\t", " ").replaceAll(", ", "").replaceAll(";", "");
 
-            ArrayList<String> traduc = new ArrayList();
-            for (String palabra : lineaClean.trim().split("\\s+")) {
-                traduc.add(palabra);
-            }
-
-            lstNodos.add(new Association<String, String>(traduc.get(0).toLowerCase(), traduc.get(1).toLowerCase()));
+            //ArrayList<String> traduc = new ArrayList();
+            // for (String palabra : lineaClean.trim().split("\\s+")) {
+            //     traduc.add(palabra);
+            // }
+            String ingles = lineaClean.trim().split("\\s+")[0];
+            String espanol = lineaClean.trim().split("\\s+")[1];
+            lstNodos.add(new Association<String, String>(ingles.toLowerCase(), espanol.toLowerCase()));
         }
 
-        BinaryTree<Association> diccionarioBTraiz = new BinaryTree<Association>(lstNodos.get(0));
+        //BinaryTree<Association> diccionarioBTraiz = new BinaryTree<Association>(lstNodos.get(0));
+        SplayTree<Association> diccSTraiz = new SplayTree<Association>(lstNodos.get(0));
+        RedBlackTree<Association> diccRBTraiz = new RedBlackTree<Association>(lstNodos.get(0));
+
 
         for (int n = 0; n < lstNodos.size(); n++) {
             if ((n+1) < lstNodos.size()) {
@@ -65,8 +68,10 @@ public class HT9 {
 
         //IMPRIMIR IN ORDER
         System.out.println();
-//        diccionarioBTraiz.inOrder(diccionarioBTraiz);
+        //diccionarioBTraiz.inOrder(diccionarioBTraiz);
         System.out.println(diccionarioBTraiz.inOrder(diccionarioBTraiz));
+
+
 
         //TRADUCCION DE ARCHIVO
 
@@ -119,5 +124,5 @@ public class HT9 {
             }
         }
     }
-    
+
 }
