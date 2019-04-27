@@ -9,7 +9,7 @@ package ht9;
  *
  * @author gianlucariverabiagioni
  */
-public class SplayBST<Key extends Comparable<Key>, Value>  {
+public class SplayBST<Key extends Comparable<Key>, Value> implements BSTInterface<Key, Value> {
 
     private Node root;   // root of the BST
 

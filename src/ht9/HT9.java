@@ -25,8 +25,15 @@ public class HT9 {
      */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-        ArrayList<Association> lstNodos = new ArrayList();
+        //ArrayList<Association> lstNodos = new ArrayList();
         String archivoNombre;
+
+        System.out.println("Ingrese la implementacion de BST que desea usar: ");
+        System.out.println("Red Black Tree: rbt");
+        System.out.println("Splay Tree: splay");
+        String tipo = read.next();
+
+        BSTInterface tree = BSTFactory.createBST(tipo);
 
         //Para leer el archivo
         System.out.println("Ingrese el nombre del archivo");
@@ -45,31 +52,15 @@ public class HT9 {
         for (String linea : archivo) {
             String lineaClean = linea.replaceAll("\t", " ").replaceAll(", ", "").replaceAll(";", "");
 
-            //ArrayList<String> traduc = new ArrayList();
-            // for (String palabra : lineaClean.trim().split("\\s+")) {
-            //     traduc.add(palabra);
-            // }
-            String ingles = lineaClean.trim().split("\\s+")[0];
-            String espanol = lineaClean.trim().split("\\s+")[1];
-            lstNodos.add(new Association<String, String>(ingles.toLowerCase(), espanol.toLowerCase()));
-        }
-
-        //BinaryTree<Association> diccionarioBTraiz = new BinaryTree<Association>(lstNodos.get(0));
-        SplayTree<Association> diccSTraiz = new SplayTree<Association>(lstNodos.get(0));
-        RedBlackTree<Association> diccRBTraiz = new RedBlackTree<Association>(lstNodos.get(0));
-
-
-        for (int n = 0; n < lstNodos.size(); n++) {
-            if ((n+1) < lstNodos.size()) {
-                BinaryTree<Association> btSiguiente = new BinaryTree<>(lstNodos.get(n+1));
-                agregar(diccionarioBTraiz, btSiguiente);
-            }
+            String ingles = lineaClean.trim().split("\\s+")[0].toLowerCase();
+            String espanol = lineaClean.trim().split("\\s+")[1].toLowerCase();
+            tree.put(ingles, espanol);
         }
 
         //IMPRIMIR IN ORDER
         System.out.println();
-        //diccionarioBTraiz.inOrder(diccionarioBTraiz);
-        System.out.println(diccionarioBTraiz.inOrder(diccionarioBTraiz));
+        //tree.inOrder();
+        //System.out.println(tree.inOrder());
 
 
 
@@ -95,10 +86,10 @@ public class HT9 {
             String lineaClean = linea.replaceAll("\\.","");
 
             for (String palabra : lineaClean.trim().split("\\s+")) {
-                if (diccionarioBTraiz.buscar(palabra) == null) {
+                if (tree.get(palabra) == null) {
                     traduccion += "*"+palabra+"* ";
                 } else {
-                    traduccion += diccionarioBTraiz.buscar(palabra) + " ";
+                    traduccion += tree.get(palabra) + " ";
                 }
             }
             traduccion += "\n";
@@ -108,21 +99,21 @@ public class HT9 {
 
     }
 
-    public static void agregar(BinaryTree btActual, BinaryTree btSiguiente) {
-
-        if (btActual.value().toString().compareTo(btSiguiente.value().toString()) > 0) {
-            if (btActual.left().value() == null) {
-                btActual.setLeft(btSiguiente);
-            } else {
-                agregar(btActual.left(), btSiguiente);
-            }
-        } else if (btActual.value().toString().compareTo(btSiguiente.value().toString()) < 0) {
-            if (btActual.right().value() == null) {
-                btActual.setRight(btSiguiente);
-            } else {
-                agregar(btActual.right(), btSiguiente);
-            }
-        }
-    }
+    // public static void agregar(BinaryTree btActual, BinaryTree btSiguiente) {
+    //
+    //     if (btActual.value().toString().compareTo(btSiguiente.value().toString()) > 0) {
+    //         if (btActual.left().value() == null) {
+    //             btActual.setLeft(btSiguiente);
+    //         } else {
+    //             agregar(btActual.left(), btSiguiente);
+    //         }
+    //     } else if (btActual.value().toString().compareTo(btSiguiente.value().toString()) < 0) {
+    //         if (btActual.right().value() == null) {
+    //             btActual.setRight(btSiguiente);
+    //         } else {
+    //             agregar(btActual.right(), btSiguiente);
+    //         }
+    //     }
+    // }
 
 }
