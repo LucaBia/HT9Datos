@@ -25,7 +25,6 @@ public class HT9 {
      */
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-        //ArrayList<Association> lstNodos = new ArrayList();
         String archivoNombre;
 
         System.out.println("Ingrese la implementacion de BST que desea usar: ");
@@ -61,7 +60,6 @@ public class HT9 {
         System.out.println();
         //tree.inOrder();
         //System.out.println(tree.inOrder());
-
 
 
         //TRADUCCION DE ARCHIVO
