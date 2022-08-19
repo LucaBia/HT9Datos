@@ -11,6 +11,9 @@ import java.util.NoSuchElementException;
  *
  * @author gianlucariverabiagioni
  */
+
+//Obtenida de: https://algs4.cs.princeton.edu/33balanced/RedBlackBST.java.html
+
 public class RedBlackBST<Key extends Comparable<Key>, Value> implements BSTInterface<Key, Value> {
 
     private static final boolean RED   = true;

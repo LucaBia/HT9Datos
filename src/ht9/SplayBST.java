@@ -9,6 +9,10 @@ package ht9;
  *
  * @author gianlucariverabiagioni
  */
+
+//Obtenida de: https://algs4.cs.princeton.edu/33balanced/SplayBST.java.html
+
+
 public class SplayBST<Key extends Comparable<Key>, Value> implements BSTInterface<Key, Value> {
 
     private Node root;   // root of the BST
